@@ -1,0 +1,29 @@
+{
+  "name": "statcoinmarket-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "watch": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/index.js\""
+  },
+  "author": "Daniil Okrug",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "nodemon": "^2.0.16",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "node-binance-api": "^0.13.1",
+    "tsc-watch": "^5.0.3"
+  }
+}
