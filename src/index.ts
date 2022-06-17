@@ -16,7 +16,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000" 
+    origin: "https://statcoinmarket-copy-5nsj0kvw9-daniilokrug.vercel.app" 
   },
 });
 
@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://statcoinmarket-copy-5nsj0kvw9-daniilokrug.vercel.app/",
   })
 );
 app.use("/api", router);
